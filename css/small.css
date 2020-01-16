@@ -1,24 +1,23 @@
 h1 {
+    font-family: 'Lobster', cursive;
     color: #ff6347;
     text-align: center;
     padding: 0px;
     margin: 0px;
 }
 
-.picture {
-    width: 180px;
+.mypicture img {
     position: relative;
-    float: right;
-    top: -70px;
+    width: 180px;
     border-radius: 5px;
-    margin: 15px;  
+    top: 0px;
 }
 
 main {
     min-height: 505px;
 }
 
-.headerstyle, footer {
+header, footer {
     background-color: #add8e6;
     color: #ff6347;
     text-align: center;
