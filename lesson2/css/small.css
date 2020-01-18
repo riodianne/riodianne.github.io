@@ -1,0 +1,46 @@
+header{
+    background-color: #add8e6;
+    color: #ff6347;
+    text-align: center;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: 'Passion One', cursive;
+}
+
+.headername {
+    margin: 0px;
+    font-size: 1.6em;
+}
+h1 {
+    color:darkcyan;
+}
+
+section {
+    float: left;
+    background: aliceblue;    
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+    background-color: #eee;
+    text-align: center;    
+}
+
+section p{
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+.web {
+    font-family: 'Port Lligat Sans', sans-serif;
+}
