@@ -1,6 +1,10 @@
+body {
+    display: block;
+    max-width: 1200px;
+    margin: auto !important;
+}
 h1 {
     font-family: 'Lobster', cursive;
-    color: #ff6347;
     text-align: center;
     padding: 0px;
     margin: 0px;
@@ -10,16 +14,16 @@ h1 {
     position: relative;
     width: 180px;
     border-radius: 5px;
-    top: 0px;
+    margin-top: 2px;
 }
 
 main {
-    min-height: 505px;
+    min-height: 430px;
 }
 
 header, footer {
-    background-color: #add8e6;
-    color: #ff6347;
+    background-color: #79443b;
+    color: #f5f5dc;
     text-align: center;
     padding: 12px;
     margin: 5px;
@@ -27,6 +31,9 @@ header, footer {
     font-family: Cambria;
 }
 
+.footerstyle a {
+    color:#f5fffa;
+}
 .sectionstyle {
     font-family: Chowderhead;
     font-size: 19px;
@@ -38,5 +45,5 @@ header, footer {
 }
 
 #lastModified{
-    color: #808080;  
+    color: #ffff66;  
 }
