@@ -1,0 +1,18 @@
+@media only screen and (min-width: 37.5em) {
+		nav ul { display: flex; }
+            nav ul li { flex: 1 1 100%; }
+
+
+
+            .colorscheme_wrapper {
+                display: flex;
+            }
+            
+.colorscheme_wrapper img {
+    max-width: 700px;
+    width: 100%;
+}
+
+
+
+}

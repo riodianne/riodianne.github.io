@@ -1,0 +1,155 @@
+body {
+    background-color: #fbfbfb;
+    font-family: 'Arvo', serif;
+
+}
+
+/* font-family: 'Arvo', serif;
+font-family: 'Montserrat', sans-serif; */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3F3F3F;
+
+}
+
+p {
+    text-align: justify;
+}
+
+#logo img {
+    max-width: 300px;
+}
+
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 300px auto;
+    align-items: center;
+}
+
+main {
+    max-width: 1200px;
+}
+
+footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    padding: 10px;
+    background: #D2D5DA;
+    color:#3F3F3F;
+    font-family: 'Arvo', serif;
+
+}
+header,
+main,
+footer {
+	margin: 0 auto;
+}
+
+nav {
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li a {
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1.2rem;
+    color: #3F3F3F;
+    font-family: 'Montserrat', sans-serif;
+}
+nav a:hover {
+    color: #2A7B46;
+}
+
+.active a {
+    color: #2A7B46;
+}
+
+.footerstyle a {
+    color:#3F3F3F;
+}
+
+.footerstyle a:hover {
+    color: #2A7B46;
+}
+
+
+.colorscheme_wrapper {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.colorscheme_wrapper section:nth-child(2) {
+    padding: 10px;
+
+}
+
+.colorscheme_wrapper img {
+    width: 100%;
+}
+
+article {
+    margin-bottom: 20px;
+
+}
+
+.typography{
+    padding:0px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.typography, .typography td{
+    border:1px solid  #504f4f;
+}
+
+.typography td{
+    padding:10px;
+}
+
+.typographyheader, .typographyh1{
+    font-family: 'Montserrat', sans-serif;
+    color: #3F3F3F;
+    font-size: 2em;
+    background-color: #FBFBFB;
+
+}
+
+.typographyh2{
+    font-family: 'Montserrat', sans-serif;
+    color: #3F3F3F;
+    font-size: 1.5em;
+    background-color: #FBFBFB;
+}
+
+.typography_primarynavigation{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color:#3F3F3F;
+    background-color: #ffffff;
+}
+
+.typography_footernavigation{
+    background: #D2D5DA;
+    color: #3F3F3F;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    
+}
+
+.typography_paragraph{
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    background-color:#ffffff;
+}
