@@ -1,11 +1,16 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
 header{
-    background-color: #add8e6;
-    color: #ff6347;
+    background-color: #79443b;
+    color: #f5f5dc;
     text-align: center;
     padding: 12px;
     margin: 5px;
     border-radius: 5px;
-    font-family: 'Passion One', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .headername {
@@ -13,34 +18,74 @@ header{
     font-size: 1.6em;
 }
 h1 {
-    color:darkcyan;
+    color:#ffff66;
 }
 
 section {
-    float: left;
+    display: block;
     background: aliceblue;    
-}
-
-main section {
-	margin: 0.5rem;
-	border: 1px solid #bbb;
+    margin: auto;
+    border: 1px solid #bbb;
 	padding: 0 1rem;
     background-color: #eee;
     text-align: center;    
 }
 
+main section {
+	margin: 0.5rem;
+	
+}
+
 section p{
     font-size: 1.5em;
     text-align: justify;
-    font-family: 'Port Lligat Sans', sans-serif;
+    font-family: 'Arvo', serif;
+    margin: 10px;
+    padding: 10px;
 }
 
+section img {
+    width: 100%;
+}
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+    font-size: 0.8rem;
+    overflow: hidden;
 }
 
-.web {
-    font-family: 'Port Lligat Sans', sans-serif;
+.web, .webname, .weblink {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 5px;
+}
+.web{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.webname, .weblink {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #79443b;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: 'Arvo', serif;
+}
+
+.footerstyle a {
+    color:#f5f5dc;
+}    
+
+
+#lastModified{
+    color: #ffff66;  
 }
