@@ -1,0 +1,154 @@
+body {
+    display: grid;
+    grid-template-rows: 180px auto auto auto;
+    grid-template-areas: "hd"
+                         "navi"
+                         "main"
+                         "footer";
+    
+}
+
+header {
+    grid-area: hd;
+    background-color: #fbfbfb; 
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: column;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#logoweb img{
+    width: 170px;
+
+}
+
+#webname {
+    font-family: 'Montserrat', sans-serif;
+    color: #3F3F3F;
+    text-align: center;
+}
+
+#webitalics {
+    font-style: italic;
+}
+
+.navi li:first-child {
+	display: block;
+}
+.navi li {
+	display: none;
+}
+
+.responsive li {
+    display: block;
+    padding: 2px;
+}
+.responsive li:hover{
+    background-color: white;
+}
+
+nav li a:hover {
+    color: #2A7B46;
+
+}
+
+.active a {
+    color: #2A7B46;
+}
+
+nav li a {
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #3F3F3F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav {
+    text-align: center;
+    background-color: #78ab78;
+    padding: 10px;
+}
+
+main{
+    background-color: white;
+    grid-area: main;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+#idaho h2{
+    text-align: center;
+    background-color: white;
+    color: #3F3F3F;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 5px;
+}
+
+.sections {
+    border-style: dotted;
+    padding: 8px;
+    margin: 8px;
+    font-family: 'Arvo', serif;
+}
+
+.firstfooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sitemapfooter, .contactusfooter {
+    flex-basis: 45%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.footertitle {
+    font-weight: bold;
+}
+
+
+footer {
+    grid-area: footer;
+    background: #D2D5DA;
+    color:#3F3F3F;
+    font-family: 'Arvo', serif;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.footerstyle{
+    text-align: center;
+}
+
+
+.footerstyle a {
+    color:#3F3F3F;
+    
+}
+
+#lastModified{
+    color: #3F3F3F;
+    text-align: center;
+}
+

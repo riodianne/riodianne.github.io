@@ -1,0 +1,45 @@
+@media only screen and (min-width: 60em) {
+
+    #logoweb{
+        width: 300px;
+        text-align: right;
+    }
+    nav {
+        text-align: center;
+        grid-area: navi;
+        background-color: #78ab78;
+    
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav li a {
+        display: block;
+    }
+
+    .navi li {
+        display: block;
+    }
+
+    .navi li:first-child {
+		display: none;
+    }
+    
+    #logoweb img{
+        width: 180px;
+    
+    }
+
+    #webname{
+        width: 350px;
+    }
+}
