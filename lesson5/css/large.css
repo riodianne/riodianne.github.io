@@ -1,0 +1,83 @@
+@media only screen and (min-width: 60em) {
+
+    .weathersummary{
+        max-width: 400px;
+        width:100%;
+        background-color: rgba(210,213,218, 0.8);
+        position: relative;
+        top: 30px;
+        left: 30px;
+        border-radius: 15px;
+        padding: 20px;
+        margin:0px;
+    }
+
+
+    #logoweb{
+        width: 300px;
+        text-align: right;
+    }
+    nav {
+        text-align: center;
+        grid-area: navi;
+        background-color: #78ab78;
+    
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav li a {
+        display: block;
+    }
+
+    .navi li {
+        display: block;
+    }
+
+    .navi li:first-child {
+		display: none;
+    }
+    
+    #logoweb img{
+        width: 180px;
+    
+    }
+
+    #webname{
+        width: 350px;
+    }
+
+    .forecast, .sitemapfooter {
+        display: block;
+    }
+
+    .sitemapfooter, .contactusfooter {
+        flex-basis: 45%;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .articlecontainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articlemessage {
+        flex-basis: 70%;
+        text-align: justify;
+        padding:0px;
+    }
+
+    .articlepicture {
+        flex-basis: 30%;
+    }
+}
