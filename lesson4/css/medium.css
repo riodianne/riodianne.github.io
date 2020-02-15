@@ -2,5 +2,10 @@
 	.footerstyle, #lastModified  {
 		font-size: 14px;
 	}
+
+	nav li a {
+        display: block;
+        padding: 10px;
+    }
 	
 }
