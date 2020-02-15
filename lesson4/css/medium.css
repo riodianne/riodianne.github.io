@@ -6,6 +6,11 @@
 	nav li a {
         display: block;
         padding: 10px;
-    }
+	}
+	
+	.navi li:first-child {
+		display: block;
+		padding: 10px;
+	}
 	
 }
