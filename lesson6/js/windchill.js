@@ -1,7 +1,7 @@
 
 
 var f;
-var t=parseInt(document.getElementById("windchill").innerText);
+var t=parseInt(document.getElementById("high").innerText);
 var s=parseInt(document.getElementById("windspeed").innerText);
 
 
@@ -12,9 +12,9 @@ if(t<=50 && s>=3){
 //f= 35.74 + 0.6215t - 35.75 s 0.16 + 0.4275t s 0.16
 f=35.74+0.6215*t-35.75*Math.pow(s,0.16) + 0.4275*t*Math.pow(s,0.16);
 f=Math.round(f*100)/100;
-document.getElementById("high").innerHTML=f;
+document.getElementById("windchill").innerHTML=f;
 }
 
 else{
-    document.getElementById("high").innerHTML="N/A";
+    document.getElementById("windchill").innerHTML="N/A";
 }
