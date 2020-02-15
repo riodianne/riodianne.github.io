@@ -1,0 +1,28 @@
+@media only screen and (min-width: 37.5em) {
+	.footerstyle, #lastModified  {
+		font-size: 14px;
+	}
+
+	nav li a {
+        display: block;
+        padding: 10px;
+	}
+	
+	.navi li:first-child {
+		display: block;
+		padding: 10px;
+	}
+
+	.weathersummary {
+		max-width: 400px;
+		width: 100%;
+		background-color: rgba(210,213,218, 0.8);
+		position: absolute;
+		top: 350px;
+		left: 60px;
+		border-radius: 15px;
+		padding: 20px;
+		margin: 0px;
+	
+}
+}

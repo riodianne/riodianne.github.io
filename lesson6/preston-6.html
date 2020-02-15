@@ -3,20 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-        <meta name="description" content="W05 Assignment: Preston Town Page Continued">
-        <title>W05 Assignment: Preston Town Page Continued</title>
+        <meta name="description" content="
+        W06 Assignment: Responsive Images and Font">
+        <title>
+            W06 Assignment: Responsive Images and Font</title>
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/small.css">
+        <link rel="stylesheet" type="text/css" href="css/medium.css">
         <link rel="stylesheet" type="text/css" href="css/large.css">
         
-        <link href="https://fonts.googleapis.com/css?family=Arvo%7CMontserrat&display=swap" rel="stylesheet">
+        
         <script src="js/weatherforecast.js" defer></script>
         <script src="js/friday.js" defer></script>
         <script src="js/myjs.js" defer></script>
-        <script src="js/lastmodified.js" defer></script>
+        <script src="../js/lastmodified.js" defer></script>
+        <script src="js/windchill.js" defer></script>
 
     </head>
 
@@ -66,12 +70,12 @@
 
                                 <div class="coltitle">
                                     <span class="title">High:</span>
-                                    <span class="info">87&#8457;</span>
+                                    <span class="info" id="high">87&#8457;</span>
                                 </div>
 
                                 <div class="coltitle">
                                     <span class="title">Wind Chill:</span>
-                                    <span class="info">&#8457;</span>
+                                    <span class="info" id="windchill">30&#8457;</span>
                                 </div>
                                 
                                 <div class="coltitle">
@@ -81,7 +85,7 @@
 
                                 <div class="coltitle">
                                     <span class="title">Wind Speed:</span>
-                                    <span class="info">5 mph</span>
+                                    <span class="info" id="windspeed">5 mph</span>
                                 </div>
 
 
@@ -163,5 +167,7 @@
 
             <div id="lastModified"></div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontloader.js"></script>
     </body>
 </html>

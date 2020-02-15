@@ -59,7 +59,8 @@ header {
 }
 
 .navi li:first-child {
-	display: block;
+    display: block;
+    padding: 15px;
 }
 .navi li {
 	display: none;
@@ -67,27 +68,28 @@ header {
 
 .responsive li {
     display: block;
-    padding: 2px;
+    padding: 5px;
 }
 .responsive li:hover{
-    background-color: white;
+    background-color: #3F3F3F;
 }
 
 nav li a:hover {
-    color: #2A7B46;
+    color: #FDDD00;
 
 }
 
-.active a {
-    color: #2A7B46;
+.active a, .active {
+    color: #FDDD00;
+    background-color: #3F3F3F;
 }
 
 nav li a {
     text-align: center;
-    padding: 0.75rem;
+    padding: 0px;
     text-decoration: none;
     font-size: 1.2rem;
-    color: #3F3F3F;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -101,8 +103,7 @@ nav ul {
 nav {
     grid-area: navi;
     text-align: center;
-    background-color: #78ab78;
-    padding: 10px;
+    background-color: #83D16B;
 }
 
 main{
@@ -147,14 +148,15 @@ main{
     width: 100%;
 }
 
-.weathersummary{
+.weathersummary {
     max-width: 400px;
-    width:100%;
+    width: 100%;
     background-color: rgba(210,213,218, 0.8);
-    position: relative;
-    top: 30px;
-    display:block;
-    margin:auto;
+    position: absolute;
+    top: 289px;
+    left: 20px;
+    display: block;
+    margin: auto;
     border-radius: 15px;
     padding: 20px;
 }
