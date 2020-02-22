@@ -123,6 +123,14 @@ main{
     padding: 15px;
 }
 
+#weathergallery h2{
+    text-align: left;
+    background-color: white;
+    color: #3F3F3F;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 15px;
+}
 .sections {
     margin-bottom: 20px;
     font-family: 'Arvo', serif;
@@ -311,5 +319,39 @@ footer {
     justify-content: center;
     align-items: center;
     grid-template-columns: auto;
+    grid-gap: 2px;
 }
+
+.imagecol {
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .imagecol img {
+      width: 100%;
+  }
+  
+  .animate{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .animate.appear {
+    opacity: 1;
+  }
+
+  figure {
+    border: 1px solid #333;
+  }
+
+  figcaption {
+    color:#3F3F3F;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    padding: 3px;
+
+  }
 

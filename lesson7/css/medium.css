@@ -31,4 +31,21 @@
 		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
 	}
+
+	.imagecol {
+		display: grid;
+		grid-gap: 2em;
+		align-items: center;
+		grid-template-columns: auto;
+		justify-content: center;
+	  }
+	  
+	  .animate{
+		opacity: 0;
+		transition: opacity 250ms ease-in;
+	  }
+	  
+	  .animate.appear {
+		opacity: 1;
+	  }
 }
