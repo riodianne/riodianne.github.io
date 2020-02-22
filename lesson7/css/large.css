@@ -84,4 +84,9 @@
     .articlepicture {
         flex-basis: 30%;
     }
+
+    	/* Gallery */
+	.imagecontainer {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }

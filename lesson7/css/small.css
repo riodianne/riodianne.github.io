@@ -161,7 +161,6 @@ main{
     padding: 20px;
 }
 
-
 .weathersummaryheader, .sectionheader, .articleheader, .footertitle {
     font-size: 1.3rem;
     width: 100%;
@@ -296,7 +295,6 @@ footer {
     text-align: center;
 }
 
-
 .footerstyle a {
     color:#3F3F3F;
     
@@ -305,5 +303,13 @@ footer {
 #lastModified{
     color: #3F3F3F;
     text-align: center;
+}
+
+/*Gallery*/
+.imagecontainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
 }
 
