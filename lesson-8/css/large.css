@@ -1,0 +1,111 @@
+@media only screen and (min-width: 60em) {
+
+    .weathersummary {
+        max-width: 400px;
+        width: 100%;
+        background-color: rgba(210,213,218, 0.8);
+        position: absolute;
+        top: 355px;
+        left: 140px;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 0px;
+    }
+
+
+    #logoweb{
+        width: 300px;
+        text-align: right;
+    }
+    nav {
+        text-align: center;
+        grid-area: navi;
+        background-color: #83D16B;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav li a {
+        display: block;
+        padding: 20px;
+    }
+
+    .navi li {
+        display: block;
+    }
+
+    nav li a:hover {
+        background-color: #3F3F3F;
+    }
+
+    .navi li:first-child {
+		display: none;
+    }
+    
+    #logoweb img{
+        width: 180px;
+    
+    }
+
+    #webname{
+        width: 350px;
+    }
+
+    .forecast, .sitemapfooter {
+        display: block;
+    }
+
+    .sitemapfooter, .contactusfooter {
+        flex-basis: 45%;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .articlecontainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articlemessage {
+        flex-basis: 70%;
+        text-align: justify;
+        padding:0px;
+    }
+
+    .articlepicture {
+        flex-basis: 30%;
+    }
+
+    	/* Gallery */
+	.imagecontainer {
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    
+    .imagecol figure:hover {box-shadow: 0 0 50px #333;}
+
+    .imagecol {
+        display: grid;
+        grid-gap: 2em;
+        align-items: center;
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+      
+      .animate{
+        opacity: 0;
+        transition: opacity 250ms ease-in;
+      }
+      
+      .animate.appear {
+        opacity: 1;
+      }
+}
