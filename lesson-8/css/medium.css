@@ -48,4 +48,20 @@
 	  .animate.appear {
 		opacity: 1;
 	  }
+	
+	/* Storm Center */
+
+	.labelcontainer {
+		grid-template-columns: 1fr 1fr 2fr 1fr;
+	}
+
+	.labelcontainer input, .labelcontainer textarea, .textcontainer {
+		grid-column: 3/4;
+	}
+
+	.labelcontainer label {
+		grid-column: 2/2;
+	}
+
+
 }

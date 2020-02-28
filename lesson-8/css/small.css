@@ -123,7 +123,7 @@ main{
     padding: 15px;
 }
 
-#weathergallery h2{
+#weathergallery h2, #stormcenter h2{
     text-align: left;
     background-color: white;
     color: #3F3F3F;
@@ -182,7 +182,7 @@ main{
 .articletext {
     text-indent: 20px;
     padding-right: 15px;
-    margin-block-start: .5em;
+    /* margin-block-start: .5em; */
 }
 
 .sectionheader {
@@ -355,3 +355,88 @@ footer {
 
   }
 
+/*StormCenter*/
+.formcontainer {
+    padding: 7px;
+}
+
+.labelcontainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2px;
+    padding: 5px;
+    color: #3F3F3F;
+}
+
+.labelcontainer input, .labelcontainer textarea, .textcontainer {
+    width: 100%;
+    padding: 0px;
+    grid-column: 2/2;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+}
+
+.labelcontainer label {
+    grid-column: 1/2;
+    text-align: left;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.labelcontainer textarea {
+    height: 200px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+}
+
+.labelcontainer input, .labelcontainer select {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.labelcontainer input[type=submit]{
+    padding: 8px;
+    background-color: #83D16B;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: auto;
+    font-weight: bold;
+}
+
+.labelcontainer input[type=submit]:hover{
+    background-color: #3F3F3F;
+    color: #FDDD00;
+    cursor: pointer;
+}
+
+.labelcontainer input[type=radio]{
+    width: auto;
+    justify-content: left;
+}
+
+.labelcontainer input[type=range]{
+    width:75%;
+    padding: 0px;
+}
+
+.articlemessage_thankyou .articletext {
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 0px;
+}
+
+.articlemessage_thankyou .articleweathersite{
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.articlemessage_thankyou{
+    padding: 20px;
+}

@@ -78,7 +78,7 @@
     .articlemessage {
         flex-basis: 70%;
         text-align: justify;
-        padding:0px;
+        padding:20px;
     }
 
     .articlepicture {
