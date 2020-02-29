@@ -370,7 +370,7 @@ footer {
     color: #3F3F3F;
 }
 
-.labelcontainer input, .labelcontainer textarea, .textcontainer {
+.labelcontainer input, .labelcontainer textarea, .textcontainer, .labelcontainer select {
     width: 100%;
     padding: 0px;
     grid-column: 2/2;
@@ -421,6 +421,19 @@ footer {
 .labelcontainer input[type=range]{
     width:75%;
     padding: 0px;
+}
+
+.flexcenter {
+    display: flex;
+    align-items: center;
+}
+
+.flexcenter #ratingvalue {
+    padding-left: 10px;
+}
+
+.flexcenter span {
+    padding-right: 10px;
 }
 
 .articlemessage_thankyou .articletext {

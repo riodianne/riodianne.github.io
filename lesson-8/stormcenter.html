@@ -19,7 +19,6 @@
         <script src="js/myjs.js" defer></script>
         <script src="../js/lastmodified.js" defer></script>
         <script src="js/rating.js" defer></script>
-        <script src="js/formsubmit.js" defer></script>
 
     </head>
 
@@ -49,7 +48,7 @@
         <main>
            <div id="stormcenter"><h2>Storm Center</h2></div>
             
-           <form class="formcontainer" id="submitform">
+           <form class="formcontainer" id="submitform" method="GET" action="thanks.html">
                
                 <div class="labelcontainer">
                     <label for="fullname">Full Name: </label>
@@ -91,26 +90,9 @@
 
                 <div class="labelcontainer">
                     <label for="rating">Storm Severity: </label>
-                        <div class="textcontainer"><input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <div class="textcontainer flexcenter"><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">5</span></div>
                 </div>
-
-                    <!-- <div class="textcontainer">
-                        <datalist id="tickmarks">
-                            <option value="0">
-                            <option value="1">
-                            <option value="2">
-                            <option value="3">
-                            <option value="4">
-                            <option value="5">
-                            <option value="6">
-                            <option value="7">
-                            <option value="8">
-                            <option value="9">
-                            <option value="10">
-                        </datalist>
-                    </div> -->
-
 
                 <div class="labelcontainer">
                     <label for="stormregion">Storm Region: </label>
@@ -126,11 +108,11 @@
 
                 <div class="labelcontainer">
                     <label>User In-Danger Level: </label>
-                    <div class="textcontainer">
+                    <div class="textcontainer flexcenter">
                         <input type="radio" id="yes" name="dangerlevel" value="yes"
-                            checked>Yes
-                        <input type="radio" id="no" name="dangerlevel" value="no">No
-                        <input type="radio" id="maybe" name="dangerlevel" value="maybe">Maybe
+                            checked><span>Yes</span>
+                        <input type="radio" id="no" name="dangerlevel" value="no"><span>No</span>
+                        <input type="radio" id="maybe" name="dangerlevel" value="maybe"><span>Maybe</span>
                     </div>
                 </div>
             
