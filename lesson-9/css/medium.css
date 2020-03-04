@@ -63,5 +63,14 @@
 		grid-column: 2/2;
 	}
 
+/*Home Page*/
+	.towns{
+		grid-template-columns: repeat(2, 1fr);
+		padding: 1em;
+	}
+	
+	.towns section{
+		width: 100%;
+	}
 
 }

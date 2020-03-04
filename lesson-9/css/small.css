@@ -114,16 +114,7 @@ main{
     margin: auto;
 }
 
-#idaho h2{
-    text-align: center;
-    background-color: white;
-    color: #3F3F3F;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-    padding: 15px;
-}
-
-#weathergallery h2, #stormcenter h2{
+#idaho h2, #weathergallery h2, #stormcenter h2, #home h2{
     text-align: left;
     background-color: white;
     color: #3F3F3F;
@@ -439,4 +430,59 @@ footer {
 
 .articlemessage_thankyou{
     padding: 20px;
+}
+
+/*Home Page*/
+.towns {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 15px;
+    padding-bottom: 1em;
+}
+
+h1, footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #4d4d96;
+}
+
+.towns span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    margin: 10px auto 10px auto;
+    color: #3F3F3F;
+    
+}
+.towns span:nth-child(2){
+    margin: 0px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.towns h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px auto 5px auto;
+    color: #3F3F3F;
+    font-weight: bold;
+}
+
+.towns section{
+    border: 2px solid #3F3F3F;
+    background-color: #83D16B;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.towns img {
+    display: block;
+    width: 90%;
+    padding: 0px;
+    margin: 20px auto 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #3F3F3F;
+
 }

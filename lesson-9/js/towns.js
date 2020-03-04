@@ -25,6 +25,7 @@ fetch(requestURL)
     h2.textContent = towns[i].name;
     card.appendChild(h2);
 
+    motto.setAttribute('class', "sitemotto");
     motto.textContent = towns[i].motto;
     card.appendChild(motto);
 
@@ -37,7 +38,10 @@ fetch(requestURL)
     averageRainfall.textContent = 'Annual Rain Fall: ' +   towns[i].averageRainfall;
     card.appendChild(averageRainfall);
 
-    photo.setAttribute('src', "images/placeholder002.png");
+    let alt = towns[i].photo;
+    photo.setAttribute('src', "images/" + alt.toLowerCase());
+   
+    photo.setAttribute('alt', alt);
     card.appendChild(photo);
 
     document.querySelector('div.towns').appendChild(card);

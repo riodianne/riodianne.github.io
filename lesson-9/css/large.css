@@ -108,4 +108,14 @@
       .animate.appear {
         opacity: 1;
       }
+
+/*Home Page*/
+    .towns{
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+    .towns section{
+        width: 100%;
+    } 
 }
