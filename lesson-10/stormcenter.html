@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Preston Weather API">
+        <title>Preston Weather API</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/small.css">
+        <link rel="stylesheet" type="text/css" href="css/medium.css">
+        <link rel="stylesheet" type="text/css" href="css/large.css">
+        
+        <script src="js/friday.js" defer></script>
+        <script src="js/myjs.js" defer></script>
+        <script src="../js/lastmodified.js" defer></script>
+        <script src="js/rating.js" defer></script>
+        <script src="js/formsubmit.js" defer></script>
+
+    </head>
+
+    <body>
+        <aside id="fridaycheck">
+            <div class="friday">
+                Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion
+            </div>
+        </aside>
+        <header>
+                <div id="logoweb"><img src="images/weatherlogo.png" alt="Weather Logo"></div>
+                <div id="webname"><h1>The Weather Site</h1><span id="webitalics">The Weather For You</span></div>
+        </header>
+
+        <nav>
+                <ul class="navi">
+                    <li><a class="ham" href="#">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+        </nav>
+
+        <main>
+           <div id="stormcenter"><h2>Storm Center</h2></div>
+            
+           <form class="formcontainer" id="submitform">
+               
+                <div class="labelcontainer">
+                    <label for="fullname">Full Name: </label>
+                        <input type="text" id="fullname" name="fullname" title="Please check the name you entered" pattern="[a-zA-Z/. /-]{5,}" required>
+                </div>
+
+                <div class="labelcontainer">
+                    <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="dianamay.miranda@gmail.com">
+                </div>
+
+                <div class="labelcontainer">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+
+                <div class="labelcontainer">
+                    <label for="zipcode">Zip Code: </label>
+                        <input type="number" id="zipcode" name="zipcode" required>
+                </div>
+
+                <div class="labelcontainer">
+                    <label for="stormdate">Storm Date: </label>
+                        <input type="date" id="stormdate" name="stormdate">
+                </div>
+
+                <div class="labelcontainer">
+                    <label for="stormtype">Storm Type: </label>
+                        <input list="storm" id="stormtype" name="stormtype">
+                        <datalist id="storm">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                </div>
+
+                <div class="labelcontainer">
+                    <label for="rating">Storm Severity: </label>
+                        <div class="textcontainer"><input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span></div>
+                </div>
+
+                    <!-- <div class="textcontainer">
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </div> -->
+
+
+                <div class="labelcontainer">
+                    <label for="stormregion">Storm Region: </label>
+                        <div class="textcontainer">
+                            <select id="stormregion" name="stormregion">
+                            <option value="select" disabled selected>Select Region</option>    
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                            </select>
+                        </div>
+                </div>
+
+                <div class="labelcontainer">
+                    <label>User In-Danger Level: </label>
+                    <div class="textcontainer">
+                        <input type="radio" id="yes" name="dangerlevel" value="yes"
+                            checked>Yes
+                        <input type="radio" id="no" name="dangerlevel" value="no">No
+                        <input type="radio" id="maybe" name="dangerlevel" value="maybe">Maybe
+                    </div>
+                </div>
+            
+                <div class="labelcontainer">
+                    <label for="comments">Additional information or comments:</label>
+                    <div class="textcontainer">
+                        <textarea id="comments" rows="4" cols="50" name="text"></textarea>
+                    </div>
+                </div>
+
+                <div class="labelcontainer">
+                    <input type="submit" value="Submit">
+                </div>
+
+           </form>
+           
+        </main>
+
+        <footer>
+            <div class="firstfooter">
+                <div class="sitemapfooter">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39831.80330789654!2d-111.89925769828979!3d42.09640796565268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1580993980536!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="contactusfooter">
+                    <span class="footertitle">Contact Us</span>
+                    <ul id="socialmedia">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fbgreen.png" alt="Facebook"></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><img src="images/twittergreen.png" alt="Twiiter"></a></li>
+                        <li><a href="https://instagram.com" target="_blank"><img src="images/iggreen.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>      
+            </div>
+            <hr>
+            <div class="footerstyle">
+                &copy; 2020 | Diana May J. Miranda | Philippines | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+            </div>
+
+            <div id="lastModified"></div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontloader.js"></script>
+    </body>
+</html>

@@ -141,6 +141,7 @@ main{
     /* background: url("../images/banner.png");
     background-size: cover !important;
     height: 400px; */
+    position: relative;
 }
 
 .bannercontainer picture img{
@@ -152,7 +153,7 @@ main{
     width: 100%;
     background-color: rgba(210,213,218, 0.8);
     position: absolute;
-    top: 375.4px;
+    top: 1px;
     left: 20px;
     display: block;
     margin: auto;

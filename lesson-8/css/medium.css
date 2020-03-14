@@ -18,7 +18,7 @@
 		width: 100%;
 		background-color: rgba(210,213,218, 0.8);
 		position: absolute;
-		top: 390px;
+		top: 60px;
 		left: 60px;
 		border-radius: 15px;
 		padding: 20px;
@@ -63,5 +63,14 @@
 		grid-column: 2/2;
 	}
 
+/*Home Page*/
+	.towns{
+		grid-template-columns: repeat(2, 1fr);
+		padding: 1em;
+	}
+	
+	.towns section{
+		width: 100%;
+	}
 
 }

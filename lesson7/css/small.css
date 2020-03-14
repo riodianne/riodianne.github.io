@@ -114,16 +114,7 @@ main{
     margin: auto;
 }
 
-#idaho h2{
-    text-align: center;
-    background-color: white;
-    color: #3F3F3F;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-    padding: 15px;
-}
-
-#weathergallery h2 {
+#idaho h2, #weathergallery h2, #stormcenter h2, #home h2{
     text-align: left;
     background-color: white;
     color: #3F3F3F;
@@ -150,6 +141,7 @@ main{
     /* background: url("../images/banner.png");
     background-size: cover !important;
     height: 400px; */
+    position: relative;
 }
 
 .bannercontainer picture img{
@@ -161,7 +153,7 @@ main{
     width: 100%;
     background-color: rgba(210,213,218, 0.8);
     position: absolute;
-    top: 375.4px;
+    top: 1px;
     left: 20px;
     display: block;
     margin: auto;
@@ -182,7 +174,7 @@ main{
 .articletext {
     text-indent: 20px;
     padding-right: 15px;
-    margin-block-start: .5em;
+    /* margin-block-start: .5em; */
 }
 
 .sectionheader {
@@ -355,3 +347,143 @@ footer {
 
   }
 
+/*StormCenter*/
+.formcontainer {
+    padding: 7px;
+}
+
+.labelcontainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2px;
+    padding: 5px;
+    color: #3F3F3F;
+}
+
+.labelcontainer input, .labelcontainer textarea, .textcontainer {
+    width: 100%;
+    padding: 0px;
+    grid-column: 2/2;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+}
+
+.labelcontainer label {
+    grid-column: 1/2;
+    text-align: left;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.labelcontainer textarea {
+    height: 200px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+}
+
+.labelcontainer input, .labelcontainer select {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.labelcontainer input[type=submit]{
+    padding: 8px;
+    background-color: #83D16B;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: auto;
+    font-weight: bold;
+}
+
+.labelcontainer input[type=submit]:hover{
+    background-color: #3F3F3F;
+    color: #FDDD00;
+    cursor: pointer;
+}
+
+.labelcontainer input[type=radio]{
+    width: auto;
+    justify-content: left;
+}
+
+.labelcontainer input[type=range]{
+    width:75%;
+    padding: 0px;
+}
+
+.articlemessage_thankyou .articletext {
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 0px;
+}
+
+.articlemessage_thankyou .articleweathersite{
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.articlemessage_thankyou{
+    padding: 20px;
+}
+
+/*Home Page*/
+.towns {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 15px;
+    padding-bottom: 1em;
+}
+
+h1, footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #4d4d96;
+}
+
+.towns span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    margin: 10px auto 10px auto;
+    color: #3F3F3F;
+    
+}
+.towns span:nth-child(2){
+    margin: 0px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.towns h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px auto 5px auto;
+    color: #3F3F3F;
+    font-weight: bold;
+}
+
+.towns section{
+    border: 2px solid #3F3F3F;
+    background-color: #83D16B;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.towns img {
+    display: block;
+    width: 90%;
+    padding: 0px;
+    margin: 20px auto 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #3F3F3F;
+
+}
