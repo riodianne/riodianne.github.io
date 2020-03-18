@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .more-stuff-grid {
+    background: #f4f4f4;
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  
+  .animate{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .animate.appear {
+    opacity: 1;
+  }  
