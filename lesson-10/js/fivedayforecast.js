@@ -1,4 +1,4 @@
-const fivedayforecast = 'https:api.openweathermap.org/data/2.5/forecast?id=5604473&appid=1ffe6f1bfc0776315c26330bb20381ff';
+const fivedayforecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=1ffe6f1bfc0776315c26330bb20381ff';
 
 fetch(fivedayforecast)
   .then(function (response) {
