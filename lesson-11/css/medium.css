@@ -65,12 +65,34 @@
 
 /*Home Page*/
 	.towns{
-		grid-template-columns: repeat(2, 1fr);
-		padding: 1em;
+		/* grid-template-columns: repeat(2, 1fr);
+		padding: 1em; */
+		display: flex;
+		flex-wrap: wrap;
+		
 	}
 	
 	.towns section{
 		width: 100%;
+		display: flex;
+		margin-bottom: 20px;
+	
+	}
+
+	.towns section div{
+		height: 200px;
+		margin: auto;
+		width: 100%;
+	}
+
+	.towns img{
+		max-height: 200px;
+		margin: 20px;
+	}
+
+	.towns section:nth-child(odd){
+		flex-direction: row-reverse;
+
 	}
 
 }

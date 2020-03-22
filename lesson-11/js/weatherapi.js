@@ -1,4 +1,22 @@
-const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=1ffe6f1bfc0776315c26330bb20381ff';
+let sitetitle=document.title;
+
+var requestURL;
+//5604473 - preston
+ //5585010 - Fish Haven
+ //5607916 - Soda Spring
+if(sitetitle.includes("Preston")){
+  requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=1ffe6f1bfc0776315c26330bb20381ff';
+}
+else if(sitetitle.includes("Soda Springs")){
+  requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=1ffe6f1bfc0776315c26330bb20381ff';
+}
+else{
+  requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=1ffe6f1bfc0776315c26330bb20381ff';
+
+}
+
+
+
 
 fetch(requestURL)
   .then(function (response) {

@@ -1,7 +1,7 @@
 WebFont.load({
             google: {
               families: [
-                 'Montserrat', 'Arvo', 'Ubuntu', 'sans-serif'
+                 'Montserrat', 'Arvo', 'Ubuntu', 'sans-serif', 'Reenie Beanie', 'arial'
               ]
             }
           });

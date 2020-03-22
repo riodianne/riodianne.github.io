@@ -110,12 +110,16 @@
       }
 
 /*Home Page*/
-    .towns{
-        grid-template-columns: repeat(3, 1fr);
-    
-    }
+.towns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding-bottom: 1em;
+}
+  
     
     .towns section{
+        display: block;
         width: 100%;
     } 
 }
