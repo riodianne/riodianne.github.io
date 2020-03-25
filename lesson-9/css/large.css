@@ -78,7 +78,7 @@
     .articlemessage {
         flex-basis: 70%;
         text-align: justify;
-        padding:20px;
+        padding: 0px 20px;
     }
 
     .articlepicture {
@@ -110,12 +110,16 @@
       }
 
 /*Home Page*/
-    .towns{
-        grid-template-columns: repeat(3, 1fr);
-    
-    }
+.towns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding-bottom: 1em;
+}
+  
     
     .towns section{
+        display: block;
         width: 100%;
     } 
 }

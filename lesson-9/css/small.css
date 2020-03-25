@@ -487,3 +487,72 @@ h1, footer {
     box-shadow: 0 0 30px #3F3F3F;
 
 }
+
+.upcommingevent span{
+    width: 100%;
+    display: block;
+}
+
+.upcommingevent{
+    background:#ffc;
+    background: #ffc;
+    padding: 20px;
+    max-width: 400px;
+    margin:auto;
+    font-family:"Reenie Beanie";
+    font-size: 1.5em;
+      /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+.upcommingevent h3{
+    text-align: center;
+}
+
+.upcommingevents{
+    padding-bottom: 25px;
+}
+
+.articleauthor{
+    font-size: .7em;
+}
+.articlecontainer{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*Wireframe*/
+.wireframe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.wireframelinks {
+flex-basis: 100%;
+
+}
+.wireframelinks a {
+    color: #3F3F3F;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+    padding: 20px 30px;
+    background: #83D16B;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    
+
+}
+
+.wireframelinks a:hover {
+    background-color: #3F3F3F;
+    color: #FDDD00 !important;
+}

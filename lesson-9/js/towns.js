@@ -14,6 +14,7 @@ fetch(requestURL)
     if (towns[i].name=="Fish Haven" || towns[i].name=="Preston" || towns[i].name=="Soda Springs") {
 
     let card = document.createElement('section');
+    let divcontainer = document.createElement('div');
     let h2 = document.createElement('h2');
     let motto = document.createElement('span');
     let yearFounded = document.createElement('span');
@@ -23,23 +24,25 @@ fetch(requestURL)
     
     
     h2.textContent = towns[i].name;
-    card.appendChild(h2);
+    divcontainer.appendChild(h2);
 
     motto.setAttribute('class', "sitemotto");
     motto.textContent = towns[i].motto;
-    card.appendChild(motto);
+    divcontainer.appendChild(motto);
 
     yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded; 
-    card.appendChild(yearFounded);
+    divcontainer.appendChild(yearFounded);
 
     currentPopulation.textContent = 'Population: ' +  towns[i].currentPopulation;
-    card.appendChild(currentPopulation);
+    divcontainer.appendChild(currentPopulation);
 
     averageRainfall.textContent = 'Annual Rain Fall: ' +   towns[i].averageRainfall;
-    card.appendChild(averageRainfall);
+    divcontainer.appendChild(averageRainfall);
 
     let alt = towns[i].photo;
     photo.setAttribute('src', "images/" + alt.toLowerCase());
+
+    card.appendChild(divcontainer);
    
     photo.setAttribute('alt', alt);
     card.appendChild(photo);
