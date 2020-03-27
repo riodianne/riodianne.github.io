@@ -1,0 +1,529 @@
+body {
+    display: grid;
+    grid-template-rows: auto 180px auto auto auto;
+    grid-template-areas: "aside"
+                         "hd"
+                         "navi"
+                         "main"
+                         "footer";
+    
+}
+aside {
+    grid-area: aside;
+    background-color: #FEE500; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    text-align: center;
+}
+
+.friday {
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 20px;
+    font-family: $secondaryfont;
+
+}
+
+header {
+    grid-area: hd;
+    background-color: #fbfbfb; 
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: column;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#logoweb img{
+    width: 170px;
+
+}
+
+#webname {
+    font-family: $mainfont;
+    color: $textcolor;
+    text-align: center;
+}
+
+#webitalics {
+    font-style: italic;
+}
+
+.navi li:first-child {
+    display: block;
+    padding: 15px;
+}
+.navi li {
+	display: none;
+}
+
+.responsive li {
+    display: block;
+    padding: 5px;
+}
+.responsive li:hover{
+    background-color: $textcolor;
+}
+
+.active a, .active {
+    color: #FDDD00;
+    background-color: $textcolor;
+}
+
+nav {
+    grid-area: navi;
+    text-align: center;
+    background-color: $mainbg;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li a {
+        text-align: center;
+        padding: 0px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #000000;
+        font-family: $mainfont;
+    }
+    
+    li a:hover {
+        color: #FDDD00;
+    
+    }
+    
+}
+
+main{
+    background-color: white;
+    grid-area: main;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+#idaho h2, #weathergallery h2, #stormcenter h2, #home h2{
+    text-align: left;
+    background-color: white;
+    color: $textcolor;
+    font-family: $mainfont;
+    margin: 0px;
+    padding: 15px;
+}
+.sections {
+    margin-bottom: 20px;
+    font-family: $secondaryfont;
+    font-size: 1.2rem;;
+    font-weight: bold;
+    text-align: center;
+    color: $textcolor;
+}
+
+.forecast, .sitemapfooter {
+    display: none;
+}
+
+
+.bannercontainer{
+    width: 100%;
+    /* background: url("../images/banner.png");
+    background-size: cover !important;
+    height: 400px; */
+    position: relative;
+}
+
+.bannercontainer picture img{
+    width: 100%;
+}
+
+.weathersummary {
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(210,213,218, 0.8);
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.weathersummaryheader, .sectionheader, .articleheader, .footertitle {
+    font-size: 1.3rem;
+    width: 100%;
+    display: block;
+}
+
+.articleheader {
+    font-weight: bold;
+}
+
+.articletext {
+    text-indent: 20px;
+    padding-right: 15px;
+    /* margin-block-start: .5em; */
+}
+
+.sectionheader {
+    text-align: center;
+}
+
+.coltitle {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+}
+
+.title, .info {
+    flex-basis: 50%;
+    
+}
+
+.title {
+    text-align: right;
+    font-size: 18px;
+}
+
+.info {
+    text-align: left;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.flex {
+	display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.col {
+	flex: 1 1 100%;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	background-color: #78ab78;
+	font-size: 13px;
+	text-align: center;
+}
+
+.flex div:last-child {
+	border-right: 1px solid #333;
+}
+
+.label {
+	display: block;
+	padding: 5px;
+	font-weight: 700;
+	font-size: 15px;
+	border-bottom: 1px solid $textcolor;
+	background-color: #D2D5DA;
+}
+
+.flex div img {
+	border-radius: 100px;
+	padding: 5px;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+}
+
+.articlemessage {
+    flex-basis: 70%;
+    text-align: justify;
+    font-weight: normal;
+    padding:20px;
+}
+
+.firstfooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sitemapfooter, .contactusfooter {
+    flex-basis: 100%;
+    padding: 10px;
+    text-align: justify;
+}
+
+#socialmedia {
+    list-style: none;
+
+li {
+    display: inline-block;
+    padding: 5px;
+    }
+
+}
+
+
+.footertitle {
+    font-weight: bold;
+}
+
+
+footer {
+    grid-area: footer;
+    background: #D2D5DA;
+    color:$textcolor;
+    font-family: $secondaryfont;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.footerstyle{
+    text-align: center;
+}
+
+.footerstyle a {
+    color:$textcolor;
+    
+}
+
+#lastModified{
+    color: $textcolor;
+    text-align: center;
+}
+
+/*Gallery*/
+.imagecontainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-gap: 2px;
+}
+
+.imagecol {
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+  }
+
+  
+  
+  .animate{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .animate.appear {
+    opacity: 1;
+  }
+
+  figure {
+    border: 1px solid #333;
+  }
+
+  figcaption {
+    color:$textcolor;
+    font-family: $secondaryfont;
+    font-weight: bold;
+    padding: 3px;
+
+  }
+
+/*StormCenter*/
+.formcontainer {
+    padding: 7px;
+}
+
+.labelcontainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2px;
+    padding: 5px;
+    color: $textcolor;
+}
+
+.labelcontainer input, .labelcontainer textarea, .textcontainer {
+    width: 100%;
+    padding: 0px;
+    grid-column: 2/2;
+    font-family: $secondaryfont;
+    font-size: 16px;
+}
+
+.labelcontainer label {
+    grid-column: 1/2;
+    text-align: left;
+    font-family: $secondaryfont;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.labelcontainer textarea {
+    height: 200px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+}
+
+.labelcontainer input, .labelcontainer select {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.labelcontainer input[type=submit]{
+    padding: 8px;
+    background-color: $mainbg;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: auto;
+    font-weight: bold;
+}
+
+.labelcontainer input[type=submit]:hover{
+    background-color: $textcolor;
+    color: #FDDD00;
+    cursor: pointer;
+}
+
+.labelcontainer input[type=radio]{
+    width: auto;
+    justify-content: left;
+}
+
+.labelcontainer input[type=range]{
+    width:75%;
+    padding: 0px;
+}
+
+.articlemessage_thankyou .articletext {
+    font-family: $secondaryfont;
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 0px;
+}
+
+.articlemessage_thankyou .articleweathersite{
+    font-family: $secondaryfont;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.articlemessage_thankyou{
+    padding: 20px;
+}
+
+/*Home Page*/
+.towns {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 15px;
+    padding-bottom: 1em;
+
+    span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: $secondaryfont;
+        margin: 10px auto 10px auto;
+        color: $textcolor;
+        
+    }
+
+    h2 {
+        text-align: center;
+        font-family: $mainfont;
+        margin: 30px auto 5px auto;
+        color: $textcolor;
+        font-weight: bold;
+    }
+
+    section{
+        border: 2px solid $textcolor;
+        background-color: $mainbg;
+        width: 90%;
+        margin: auto;
+        border-radius: 15px;
+    }
+
+    img {
+        display: block;
+        width: 90%;
+        padding: 0px;
+        margin: 20px auto 20px auto;
+        border-radius: 15px;
+        box-shadow: 0 0 30px $textcolor;
+    
+    }
+}
+
+h1, footer {
+    font-family: $mainfont;
+    text-align: center;
+    color: #4d4d96;
+}
+
+
+.towns span:nth-child(2){
+    margin: 0px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.upcommingevent{
+    background:#ffc;
+    background: #ffc;
+    padding: 20px;
+    max-width: 400px;
+    margin:auto;
+    font-family:"Reenie Beanie";
+    font-size: 1.5em;
+      /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+  span{
+    width: 100%;
+    display: block;
+}
+
+h3{
+    text-align: center;
+}
+}
+
+.upcommingevents{
+    padding-bottom: 25px;
+}
+
+.articleauthor{
+    font-size: .7em;
+}
+.articlecontainer{
+    display: flex;
+    flex-direction: column-reverse;
+}
