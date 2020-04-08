@@ -1,0 +1,65 @@
+@media only screen and (min-width: 37.5em) {
+
+    header {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+    }
+
+    .bannercontent {
+        width: 80%;
+        display: block;
+        margin:auto;
+        line-height: 2em;
+    }
+
+    .sectionflex {
+        
+        div {
+            flex-basis: 50%;
+        }
+    }
+
+    .sectiongrid {
+        .ourcustomer_container{
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+
+
+    
+.footersecondrow{
+    text-align: right;
+.footer-navigation {
+    li {
+        padding: 1em;
+    }
+}
+}
+
+    .footerfirstrow{
+        div{
+            flex-basis: 50%;
+        }
+
+        .footermap, .footersocial{
+            
+            text-align: left;
+        }
+    }
+
+   
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .sectioncontact{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+   
+}

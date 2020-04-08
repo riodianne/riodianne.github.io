@@ -1,0 +1,34 @@
+{
+    "team": [
+      {
+        "name": "Codie",
+        "lastname": "Miranda",
+        "certification":"Profesional",
+        "description": "Lorem Ipsum",
+        "imageurl": "img/codie.jpg",
+		"experience":"10 years",
+        "email":"diana@test.com"
+      },
+	   {
+        "name": "Xavier Derek",
+        "lastname": "Javier",
+        "certification":"Profesional",
+        "description": "Lorem Ipsum",
+        "imageurl": "img/xavierderek.jpg",
+		"experience":"7 years",
+        "email":"diana@test.com"
+      },
+	   {
+        "name": "Sophia Unique",
+        "lastname": "Miranda",
+        "certification":"Profesional",
+        "description": "Lorem Ipsum",
+        "imageurl": "img/sophiaunique.jpg",
+		"experience":"13 years",
+        "email":"diana@test.com"
+      }
+	  
+       
+      
+    ]
+  }

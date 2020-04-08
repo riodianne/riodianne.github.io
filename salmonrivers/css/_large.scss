@@ -1,0 +1,22 @@
+@media only screen and (min-width: 60em) {
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sectiongrid {
+        .ourcustomer_container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    }
+
+    .bannercontent {
+        width: 50%;
+        margin:0px;
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+   
+}
