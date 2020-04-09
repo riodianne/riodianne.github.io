@@ -5,6 +5,10 @@ body {
   font-size: 18px;
 }
 
+p {
+  text-align: justify;
+}
+
 h1, h2, h3, h4, h5, h6, .footer-header {
   font-family: "Lilita One", cursive;
   text-transform: uppercase;
@@ -141,6 +145,7 @@ header.active {
 
 .bannercontent p {
   margin: 1em;
+  text-align: justify;
 }
 
 .weathersummary-section {
@@ -445,6 +450,10 @@ figure.slider figure figcaption {
 .cards section span {
   width: 100%;
   display: block;
+}
+
+.cards section .cards-bio {
+  text-align: justify;
 }
 
 .cards section .card-professional {

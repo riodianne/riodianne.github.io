@@ -6,6 +6,10 @@ body {
 
 }
 
+p{
+    text-align: justify;
+}
+
 h1,h2,h3,h4,h5,h6,.footer-header{
     font-family: $headerfont;
     text-transform: uppercase;
@@ -124,6 +128,7 @@ header.active{
     font-size: 1.3em;
     p{
         margin:1em;
+        text-align: justify;
     }
 }
 .weathersummary-section{
@@ -380,6 +385,12 @@ iframe{
             width: 100%;
             display:block;
         }
+
+
+        .cards-bio{
+            text-align: justify;
+        }
+        
         .card-professional{
             font-style: italic;
         }

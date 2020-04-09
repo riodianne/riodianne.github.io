@@ -13,7 +13,7 @@ for (let i = 0; i < team.length; i++ ) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let spancert = document.createElement('span');
-    let description = document.createElement('span');
+    let description = document.createElement('p');
     let image = document.createElement('img');
     let email = document.createElement('span');
 
@@ -37,6 +37,7 @@ for (let i = 0; i < team.length; i++ ) {
     card.appendChild(email);
 
     description.textContent = team[i].description;
+    description.setAttribute('class','cards-bio');
     
     card.appendChild(description);
 
