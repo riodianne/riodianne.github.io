@@ -4,28 +4,28 @@
         "name": "Codie",
         "lastname": "Miranda",
         "certification":"Profesional",
-        "description": "Lorem Ipsum",
+        "description": "She was born and raised near the river. In her early age, she created improvised boat. She also completed Standard First Aid and CPR Certification. She then decided to look for a job that requires knowledge in First Aid and apply her passion in water sports.",
         "imageurl": "img/codie.jpg",
 		"experience":"10 years",
-        "email":"diana@test.com"
+        "email":"codie@elyu.com"
       },
 	   {
         "name": "Xavier Derek",
         "lastname": "Javier",
         "certification":"Profesional",
-        "description": "Lorem Ipsum",
+        "description": "He loves everything about water! He is an adventurous man and loves extreme sports. To be a white rafting guide has been his dream job ever since he was a kid. You will enjoy his company because of his many water sports stories.",
         "imageurl": "img/xavierderek.jpg",
 		"experience":"7 years",
-        "email":"diana@test.com"
+        "email":"xavier@elyu.com"
       },
 	   {
         "name": "Sophia Unique",
         "lastname": "Miranda",
         "certification":"Profesional",
-        "description": "Lorem Ipsum",
+        "description": "She has the longest experience in white rafting in the team. She participated in various trainings and gained many certificates. Being a white rafting guide has been her passion and she's inlove with it!",
         "imageurl": "img/sophiaunique.jpg",
 		"experience":"13 years",
-        "email":"diana@test.com"
+        "email":"sophia@elyu.com"
       }
 	  
        

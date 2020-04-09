@@ -10,6 +10,13 @@ h1, h2, h3, h4, h5, h6, .footer-header {
   text-transform: uppercase;
 }
 
+.mainlogo {
+  max-width: 100px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
 .pagetitle-section {
   padding: .5em 1em .5em 1em;
   background: radial-gradient(#DAEEE9, #11101000);
@@ -119,7 +126,7 @@ header.active {
 
 .herobanner {
   padding: 20vh 0;
-  background: #0d2b249e url(/salmonrivers/img/background.jpg);
+  background: #0d2b249e url(/salmonrivers/img/banner.jpg);
   background-position: center;
   background-size: cover;
   background-blend-mode: darken;
@@ -207,6 +214,7 @@ header.active {
 
 .sectiongrid {
   padding: 1em;
+  margin-top: -73px;
 }
 
 .sectiongrid h2 {
@@ -334,20 +342,8 @@ footer {
   45% {
     left: -100%;
   }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
   100% {
-    left: -400%;
+    left: -200%;
   }
 }
 
@@ -364,20 +360,8 @@ footer {
   45% {
     left: -100%;
   }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
   100% {
-    left: -400%;
+    left: -200%;
   }
 }
 
@@ -571,10 +555,22 @@ figure.slider figure figcaption {
   padding: 1em;
 }
 
+.credit-section ul {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+}
+
+.credit-section span {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 37.5em) and (min-width: 37.5em) {
   header {
     -ms-grid-columns: 1fr 4fr;
         grid-template-columns: 1fr 4fr;
+  }
+  .mainlogo {
+    margin: 0px;
   }
   .navigation {
     -webkit-box-pack: end;

@@ -11,6 +11,13 @@ h1,h2,h3,h4,h5,h6,.footer-header{
     text-transform: uppercase;
 }
 
+
+.mainlogo{
+    max-width: 100px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
 .pagetitle-section{
     padding:.5em 1em .5em 1em;
    background: radial-gradient(#DAEEE9, #11101000);
@@ -102,7 +109,7 @@ header.active{
 
 .herobanner {
     padding: 20vh 0;
-    background: #0d2b249e url(/salmonrivers/img/background.jpg);
+    background: #0d2b249e url(/salmonrivers/img/banner.jpg);
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
@@ -188,6 +195,7 @@ header.active{
 
 .sectiongrid {
     padding: 1em;
+    margin-top: -73px;
     h2{
         display: block;
         width: 100%;
@@ -310,11 +318,7 @@ iframe{
     20% { left: 0%; }
     25% { left: -100%; }
     45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
+    100% { left: -200%; }
     }
     * {
       box-sizing: border-box;
@@ -475,4 +479,11 @@ iframe{
 }
 .credit-section{
     padding:1em;
+    ul{
+        margin-block-start: 0em;
+    }
+    span{
+        font-weight: bold;
+    }
 }
+
